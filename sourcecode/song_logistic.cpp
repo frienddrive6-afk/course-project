@@ -136,8 +136,7 @@ void parseSongFile(string &db_dir_path,vector<Sounds> &song_catalog)
 
             if(!title.empty() && !autor.empty() && year != 0)
             {
-                // cout<<"Ошибок чтения файла НЕТ"<<endl;
-                // cout<<endl;
+
 
                 new_song.title = title;
                 new_song.author = autor;
@@ -146,10 +145,7 @@ void parseSongFile(string &db_dir_path,vector<Sounds> &song_catalog)
 
                 song_catalog.push_back(new_song);
             }
-            // else
-            // {
-            //     cout<<"Ошибка чтения данные не сохраняются"<<endl;
-            // }
+
             
 
             
@@ -275,7 +271,6 @@ void createSound(string &db_dir_path,vector<Sounds> &song_catalog,const int choi
 
         case 2:
         {
-            // vector<string> items = {"1)добавление в ручную","2)Добавление из файла(указать полный путь к файлу с текстом)"};
             vector<string> items = {lang[MENU_ADD_TEXT_MANUALLY], lang[MENU_ADD_TEXT_FROM_FILE]};
             int menu_choice = show_menu(lang[TITLE_ADD_TEXT_MENU], items);
             vubor = menu_choice + 1;
@@ -565,7 +560,6 @@ void editSong(vector<Sounds> &song_catalog,const int choice,ScreenState* screen_
 
         case 2:
         {
-            // vector<string> items_menu = {"1)Название песни","2)Имя автора","3)Год выпуска","4)Текст песни(Прийдется писать весь заново)"};
             vector<string> items_menu = {
                 lang[MENU_EDIT_TITLE],
                 lang[MENU_EDIT_AUTHOR],

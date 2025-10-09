@@ -245,12 +245,7 @@ void createSound(string &db_dir_path,vector<Sounds> &song_catalog,const int choi
  */
 void displayAllSongs(vector<Sounds> &song_catalog);
 
-/**
- * @brief Видаляє пісню з каталогу та її файл.
- * @param song_catalog Посилання на каталог пісень.
- * @param choice Тип інтерфейсу.
- * @param screen_state Вказівник на стан екрану (для ncurses).
- */
+
 void deleteSong(vector<Sounds> &song_catalog,const int choice,ScreenState* screen_state = nullptr);
 
 /**
