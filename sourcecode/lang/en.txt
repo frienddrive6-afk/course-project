@@ -1,0 +1,59 @@
+Select interface type\n1) Standard (legacy)\n2) Ncurses (New)\nYour choice: 
+Main Menu "Song Lyrics Catalog"
+Welcome, user.\nWelcome to the "Song Lyrics Catalog" program.\nPlease select an action:\n
+Your choice: 
+1) Add new song
+2) Display all songs
+3) Delete song
+4) Edit song information
+5) Find all songs by author
+6) Find songs by word in lyrics
+7) Display full song text
+8) Save song lyrics to file
+9) Exit
+Songs folder not found at default path. You have two options:\n1) Specify path to the folder\n2) Create a new folder\nYour choice: 
+Enter the new FULL path to the music folder: 
+A folder for storing songs was created at this path -> 
+Alas, there are no songs yet
+Enter the song title: 
+Enter the author's name: 
+Enter the year of release: 
+Select a way to add lyrics:
+Enter * to finish
+Enter the full path to the lyrics file: 
+ERROR opening file!
+Enter the number of the song you want to delete (starting from 1):
+Enter the number of the song to edit (starting from 1):
+Select the number of the song to display (starting from 1):
+Select the song you want to save: 
+Error: invalid song number
+Enter the parameter you want to change
+Song Title
+Author's Name
+Year of Release
+Lyrics (You will have to rewrite everything)
+Enter the author's name to search for: 
+This author's songs are: 
+No songs found for this author :(
+Enter the word you want to find in the lyrics: 
+In the song named '%s' by '%s'
+No songs containing this word were found.
+Select display mode\n1) Display in terminal\n2) Open in editor\nYour choice: 
+----------Lyrics----------
+----------End of Lyrics----------
+Press any key to return...
+Enter lyrics. Press Ctrl+D to finish.
+Add manually
+Add from file
+----------Start of output-----------
+Song number -> 
+Song Title: 
+Author: 
+Year of Release: 
+---------End----------
+Search results for author '%s':
+Search results for word '%s':
+ year of release
+ by 
+Display in terminal
+Open in text editor

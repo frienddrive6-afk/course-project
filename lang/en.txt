@@ -1,0 +1,59 @@
+Select interface type\n1) Standard (old)\n2) Via ncurses (New)\nYour choice: 
+Main menu of the “Song Lyrics Catalog” program
+Good day, user.Welcome to the “Song Lyrics Catalog” program.Select an action:
+Your choice: 
+1) Add a new song
+2) Display all existing songs
+3) Delete a song
+4) Edit song information
+5) Find all songs by author
+6) Find songs by a word in the lyrics
+7) Display the full lyrics
+8) Save the lyrics to a file
+9) Change the language
+10) Exit
+There is no default path to the song folder. You have two options:\n1) Specify the path to the folder\n2) Create a new folder\nYour choice: 
+Specify the new FULL path to the music folder: 
+A folder for storing songs was created at the following path -> 
+Unfortunately, there are no songs yet
+Enter the song title: 
+Enter the author's name: 
+Enter the year of release: 
+Select how to add text:
+Add manually
+Add from file
+Enter * to finish
+Enter the full path to the text file: 
+ERROR opening file!
+Enter the number of the song you want to delete (starting with 1):
+Enter the number of the song you want to change (starting with 1):
+Select the number of the song you want to display (starting with 1):
+Select the song you want to save: 
+Error: invalid song number
+Enter the parameter you want to change
+Song title
+Author name
+Year of release
+Song lyrics (You will have to rewrite them entirely)
+Enter the author's name to search for: 
+This author has written the following songs:
+No songs related to this author were found :(
+Enter the word you want to find in the song: 
+Search results for the word ‘%s’:
+In the song titled ‘%s’ by author ‘%s’
+ author 
+No songs containing this word were found.
+Select how you want to display the song: 
+Display in terminal
+Open in text editor
+----------Song lyrics----------
+----------End of song----------
+----------Start of output-----------
+Song number -> 
+Song title: 
+Author: 
+Year of release: 
+ year of release
+---------End----------
+Press any key to return...
+Enter text. Press Ctrl+D to finish.

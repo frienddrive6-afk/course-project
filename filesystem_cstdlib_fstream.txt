@@ -1,0 +1,67 @@
+                                            filesystem
+
+filesystem::exists(path) проверяет есть ли файл или папка по указаному пути папкой возвращает true  или false
+
+filesystem::is_directory(path) проверяет является ли файл по указаному пути ПАПКОЙ возвращает true  или false
+
+filesystem::is_regular_file(path) проверяет является ли файл по указаному пути ФАЙЛОМ возвращает true  или false
+
+filesystem::create_directory(path) создает папку по указаному пути
+
+filesystem::directory_iterator(path) сканер папки повзоляет пройтись по всем обьектам в масиве
+пример:for (const auto& entry : filesystem::directory_iterator(path)) { ... }
+
+filesystem::remove(path) удаляет файл или папку по указаному пути
+
+rename(old_path, new_path) перейменовывает или перемещает файл или папку
+
+filesystem::is_empty(path) проверяет пустая ли папка
+
+path.parent_path() уберает от пути название файла используется с типом данных filesystem::path пример было ./songs/My_Song.txt стало ./songs/
+перевод с path в string (переменная).string()
+
+
+          для фалов типа entry от сюда <---const auto& entry : filesystem::directory_iterator(path)
+          
+entry.path() возвращает путь к файлу
+
+entry.path().filename() возращает имя вайла используется с .path()
+
+entry.path().extension() возвращает тип файла пример .txt
+
+.string() переводит в string
+
+
+
+
+
+
+                                         cstdlib
+                                         
+                                         
+system(command) выполняет команду так как будто вы ввели ее в терменал
+
+
+
+
+
+
+
+                                         fstream
+                                         
+                                         
+ifstream    Input File Stream чтение фала    ifstream my_file("song.txt");
+
+ofstream    Output File Stream запись файла   ofstream my_file("new_song.txt");
+ofstream my_file("название файла.txt", ios::app);  открывает файл для записи не удаляя содержимое курсор ставит в конец
+fstream my_file("название файла.txt", ios::in | ios::out);  открывает и для чтения и для запись
+
+
+.is_open()   проверяет бы ли открыт файл   if (!my_file.is_open()) { ... }
+
+.close()    закрытие файла обязательно для любого вида открытия    my_file.close();
+
+getline(файл созданый на пример ifstream, строчка в какую записать)   while (getline(my_file, line)) { ... }
+
+
+

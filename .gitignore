@@ -20,3 +20,8 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+#Игнорировать все файлы, начинающиеся с "temp"
+temp*
+#Все папки с названием build
+build
